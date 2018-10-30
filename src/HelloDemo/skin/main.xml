@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Window size="800,600" mininfo="600,400" caption="0,0,0,32" sizebox="4,4,4,4">
+    <Default name="VScrollBar" value="button1normalimage=&quot;file='scroll.png' source='0,0,16,16'&quot; button1hotimage=&quot;file='scroll.png' source='0,0,16,16' mask='#FFFF00FF'&quot; button1pushedimage=&quot;file='scroll.png' source='0,16,16,32' mask='#FFFF00FF'&quot; button1disabledimage=&quot;file='scroll.png' source='0,0,16,16' mask='#FFFF00FF'&quot; button2normalimage=&quot;file='scroll.png' source='0,32,16,48' mask='#FFFF00FF'&quot; button2hotimage=&quot;file='scroll.png' source='0,32,16,48' mask='#FFFF00FF'&quot; button2pushedimage=&quot;file='scroll.png' source='0,48,16,64' mask='#FFFF00FF'&quot; button2disabledimage=&quot;file='scroll.png' source='0,32,16,48' mask='#FFFF00FF'&quot; thumbnormalimage=&quot;file='scroll.png' source='0,64,16,80' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbhotimage=&quot;file='scroll.png' source='0,64,16,80' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbpushedimage=&quot;ffile='scroll.png' source='0,64,16,80' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbdisabledimage=&quot;file='scroll.png' source='0,64,16,80' corner='2,2,2,2' mask='#FFFF00FF'&quot; railnormalimage=&quot;file='scroll.png' source='0,80,16,96' corner='2,2,2,2' mask='#FFFF00FF'&quot; railhotimage=&quot;file='scroll.png' source='0,80,16,96' corner='2,2,2,2' mask='#FFFF00FF'&quot; railpushedimage=&quot;file='scroll.png' source='0,96,16,112' corner='2,2,2,2' mask='#FFFF00FF'&quot; raildisabledimage=&quot;file='scroll.png' source='0,80,16,96' corner='2,2,2,2' mask='#FFFF00FF'&quot; bknormalimage=&quot;file='scroll.png' source='0,128,16,146' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkhotimage=&quot;file='scroll.png' source='0,128,16,146' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkpushedimage=&quot;file='scroll.png' source='0,128,16,146' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkdisabledimage=&quot;file='scroll.png' source='0,128,16,146' corner='2,2,2,2' mask='#FFFF00FF'&quot; " />
+	<!-- 窗口的初始尺寸(宽800，高600)、窗口的最小尺寸(宽600，高400)、标题栏拖拽区域(高32)、可拖拽边框大小(这里添加sizebox后就可以拖拽边框调整大小了) -->
+    <VerticalLayout bkcolor="#FFE2E2E2" bkcolor2="#FFE2E2E2">
+        <!-- 整个窗口的背景色 -->
+        <!-- 标题栏区 -->
+        <HorizontalLayout height="32" bkcolor="#FFE2E2E2" bkcolor2="#FFCCCCCC">
+            <!-- 标题栏背景色 bkcolor、bkcolor2、bkcolor3分别是渐变色的三个值-->
+            <VerticalLayout>
+				<Label name="txtWndTitle" width="200" align="left" padding="10 6 0 0" textcolor="0xFFFFFFFF" text="我打内部工具 v1.1" />
+			</VerticalLayout>
+            <!-- 占空位，占据左边所有的空位-->
+            <VerticalLayout width="77">
+                <!-- 右边三个控件所占的宽度-->
+                <Button name="minbtn" tooltip="最小化" float="true" pos="0,5,22,24" width="23" normalimage=" file='MinNormal.bmp' " hotimage=" file='MinFocus.bmp' " pushedimage=" file='MinFocus.bmp' " />
+                <Button name="maxbtn" tooltip="最大化" float="true" pos="22,5,44,24" width="23" normalimage=" file='MaxNormal.bmp' " hotimage=" file='MaxFocus.bmp' " pushedimage=" file='MaxFocus.bmp' " />
+                <Button name="restorebtn" visible="false" tooltip="还原" float="true" pos="22,5,44,24" width="23" normalimage=" file='StoreNormal.bmp' " hotimage=" file='StoreFocus.bmp' " pushedimage=" file='StoreFocus.bmp' " />
+                <Button name="closebtn" tooltip="关闭" float="true" pos="44,5,74,24" width="28" normalimage=" file='CloseNormal.bmp' " hotimage=" file='CloseFocus.bmp' " pushedimage=" file='CloseFocus.bmp' " />
+            </VerticalLayout>
+        </HorizontalLayout>
+        <!-- 客户区 -->
+		<VerticalLayout padding="8 5 8 5">
+			<HorizontalLayout height="30">
+				<Button name="btnHello" text="hello,duilib_wc!" textcolor="0xFFFFFFFF" bkcolor="0xFF0088CC" hotbkcolor="0xFF1e74c5" />
+			</HorizontalLayout>
+		</VerticalLayout>
+    </VerticalLayout>
+</Window>
