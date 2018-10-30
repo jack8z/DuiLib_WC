@@ -3,6 +3,8 @@
 - 默认编译为静态链接库
 
 ## 编译
+- 使用cmake 3.11，在windows10上VS2017环境下，编译通过
+
 #### 使用NMake编译(VS2017)
 ```BASH
 cmake .. -G"NMake Makefiles"
@@ -25,4 +27,4 @@ cmake .. -G"Visual Studio 15 2017"
 然后运行以下命令：
 ```BASH
 msbuild.exe DemoDuiLib.sln /t:Rebuild /p:Configuration=Release
-```BASH
+```
