@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Window size="60,60" maxinfo="60,60" mininfo="60,60" roundcorner="60,60" caption="0,0,0,60" sizebox="0,0,0,0">
+    <VerticalLayout bkcolor="#FF368EE0" bkcolor2="#FF368EE0" bordercolor="#FF2D8CF0" bkimage=" file='circle.png' ">
+		<VerticalLayout>
+			<Label name="txtTotalCount" width="60" align="center" padding="0 8 0 0" textcolor="0xFFFFFFFF" text="30000" />
+		</VerticalLayout>
+		<VerticalLayout>
+			<Label name="txtErrorCount" width="60" align="center" padding="0 0 0 0" textcolor="0xFFFFFF66" text="1000" />
+		</VerticalLayout>
+    </VerticalLayout>
+</Window>

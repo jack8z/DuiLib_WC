@@ -8,7 +8,7 @@
         <HorizontalLayout height="32" bkcolor="#FFE2E2E2" bkcolor2="#FFCCCCCC">
             <!-- 标题栏背景色 bkcolor、bkcolor2、bkcolor3分别是渐变色的三个值-->
             <VerticalLayout>
-				<Label name="txtWndTitle" width="200" align="left" padding="10 6 0 0" textcolor="0xFFFFFFFF" text="HelloDemo" />
+				<Label name="txtWndTitle" width="200" align="left" padding="10 6 0 0" textcolor="0xFFFFFFFF" text="FloatingLayout" />
 			</VerticalLayout>
             <!-- 占空位，占据左边所有的空位-->
             <VerticalLayout width="77">
@@ -22,7 +22,8 @@
         <!-- 客户区 -->
 		<VerticalLayout padding="8 5 8 5">
 			<HorizontalLayout height="30">
-				<Button name="btnHello" text="hello,duilib_wc!" textcolor="0xFFFFFFFF" bkcolor="0xFF0088CC" hotbkcolor="0xFF1e74c5" />
+				<Button name="btnView" text="显示浮窗" textcolor="0xFFFFFFFF" bkcolor="0xFF0088CC" hotbkcolor="0xFF1e74c5" />
+                <Button name="btnHide" text="关闭浮窗" textcolor="0xFFFFFFFF" bkcolor="0xFFAAAAAA" hotbkcolor="0xFF999999" />
 			</HorizontalLayout>
 		</VerticalLayout>
     </VerticalLayout>
