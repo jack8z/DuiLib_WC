@@ -1,3 +1,4 @@
 .vscode/
 build/
 src/.DS_Store
+src/FloatingLayout/skin/Thumbs.*
