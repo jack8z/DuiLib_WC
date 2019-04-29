@@ -12,7 +12,7 @@ void CFloatingDlg::InitWindow()
     styleValue |= WS_EX_TOOLWINDOW;   //工具条窗口样式
     SetWindowLong(m_hWnd, GWL_EXSTYLE, styleValue);
 
-    m_pBtnHello = static_cast<CButtonUI *>(m_PaintManager.FindControl(_T("btnHello")));
+    m_pBtnHello = static_cast<CButtonUI *>(m_pm.FindControl(_T("btnHello")));
 
     ::SetWindowPos(m_hWnd, HWND_TOPMOST, 0, 0, 0, 0, SWP_NOMOVE | SWP_NOSIZE); //窗口置顶
 }

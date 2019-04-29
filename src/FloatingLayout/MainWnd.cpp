@@ -6,7 +6,7 @@
 
 void CMainWnd::InitWindow()
 {
-    m_pBtnHello = static_cast<CButtonUI *>(m_PaintManager.FindControl(_T("btnHello")));
+    m_pBtnHello = static_cast<CButtonUI *>(m_pm.FindControl(_T("btnHello")));
 }
 
 void CMainWnd::Notify(TNotifyUI &msg)

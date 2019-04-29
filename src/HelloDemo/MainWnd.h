@@ -11,7 +11,7 @@ public:
   virtual LPCTSTR GetWindowClassName() const { return _T("MainFrameWnd"); }
   virtual CDuiString GetSkinFile() { return _T("main.xml"); }
   virtual CDuiString GetSkinFolder() { return _T("skin"); }
-  virtual UILIB_RESOURCETYPE GetResourceType() const { return UILIB_ZIPRESOURCE; }
+  virtual UILIB_RESTYPE GetResourceType() const { return UILIB_ZIPRESOURCE; }
   virtual LPCTSTR GetResourceID() const { return MAKEINTRESOURCE(IDR_ZIPRES); }
 
   virtual void InitWindow();
