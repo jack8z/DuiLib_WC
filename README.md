@@ -28,3 +28,13 @@ cmake .. -G"Visual Studio 15 2017"
 ```BASH
 msbuild.exe DemoDuiLib.sln /t:Rebuild /p:Configuration=Release
 ```
+
+#### 使用Ninja编译(VS2017)
+```BASH
+cmake .. -G"Ninja"
+```
+或者：
+```BASH
+cmake .. -G"Ninja" -DCMAKE_BUILD_TYPE=Release
+```
+
